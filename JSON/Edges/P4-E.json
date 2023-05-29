@@ -1,0 +1,64 @@
+[
+    {
+        "Start_Node_Name": "A0",
+        "End_Node_Name": "A4",
+        "capacity": 150,
+        "price": 0.5
+    },
+    
+    {
+        "Start_Node_Name": "A1",
+        "End_Node_Name": "A4",
+        "capacity": 100,
+        "price": 100
+    },
+
+    {
+        "Start_Node_Name": "A1",
+        "End_Node_Name": "A5",
+        "capacity": 150,
+        "price": 100
+    },
+    
+    {
+        "Start_Node_Name": "A1",
+        "End_Node_Name": "A0'",
+        "capacity": 80,
+        "price": 100
+    },
+    
+    {
+        "Start_Node_Name": "A2",
+        "End_Node_Name": "A4",
+        "capacity": 100,
+        "price": 100
+    },
+    
+    {
+        "Start_Node_Name": "A2",
+        "End_Node_Name": "A5",
+        "capacity": 150,
+        "price": 100
+    },
+    
+    {
+        "Start_Node_Name": "A2",
+        "End_Node_Name": "A0'",
+        "capacity": 80,
+        "price": 100
+    },
+
+    {
+        "Start_Node_Name": "A3",
+        "End_Node_Name": "A5",
+        "capacity": 70,
+        "price": 3
+    },
+    
+    {
+        "Start_Node_Name": "A3",
+        "End_Node_Name": "A0'",
+        "capacity": 150,
+        "price": 0.5
+    }
+]

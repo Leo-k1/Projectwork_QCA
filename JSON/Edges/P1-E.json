@@ -1,0 +1,15 @@
+[
+    { 
+        "Start_Node_Name": "A0",
+        "End_Node_Name": "A4",
+        "capacity": 2,
+        "price": 0.5
+    },
+
+    { 
+        "Start_Node_Name": "A1",
+        "End_Node_Name": "A4",
+        "capacity": 3,
+        "price": 1.5
+    }
+]

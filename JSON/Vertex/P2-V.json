@@ -1,0 +1,41 @@
+[
+    {
+        "sb": [3,2],
+        "seller_groups": 3
+    },
+    
+    {
+        "Node_Name": "A0",
+        "Prezzo_Unita": 1.5,
+        "Disponibilita": 3,
+        "group": 0
+    },
+    
+    {
+        "Node_Name": "A1",
+        "Prezzo_Unita": 1,
+        "Disponibilita": 3,
+        "group": 1
+    },
+    
+    {
+        "Node_Name": "A2",
+        "Prezzo_Unita": 0.5,
+        "Disponibilita": 2,
+        "group": 2
+    },
+    
+    {
+        "Node_Name": "A3",
+        "Prezzo_Unita": 4,
+        "Disponibilita": 3,
+        "group": 3
+    },
+    
+    {
+        "Node_Name": "A4",
+        "Prezzo_Unita": 3,
+        "Disponibilita": 2,
+        "group": 4
+    }
+]

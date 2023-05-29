@@ -1,0 +1,27 @@
+[
+    {
+        "sb": [2,1],
+        "seller_groups": 2 
+    },
+    
+    { 
+        "Node_Name": "A0",
+        "Prezzo_Unita": 0.5,
+        "Disponibilita": 3,
+        "group": 0
+    },
+
+    { 
+        "Node_Name": "A1",
+        "Prezzo_Unita": 0.5,
+        "Disponibilita": 2,
+        "group": 1
+    },
+
+    { 
+        "Node_Name": "A4",
+        "Prezzo_Unita": 2,
+        "Disponibilita": 4,
+        "group": 2
+    }
+]

@@ -1,0 +1,106 @@
+# #Problema 2 (P2) 3 Seller e 2 Buyer
+# sb = [3,2]; # [Num_Seller,Num_Buyer]
+# seller_groups = 3; # Num_Seller_Group
+# G.add_nodes_from([
+#     ('A0',{'Prezzo_Unita': 1.5,'Disponibilita':3,'group':0}),
+#     ('A1',{'Prezzo_Unita': 1,'Disponibilita':2,'group':1}),
+#     ('A2',{'Prezzo_Unita': 0.5,'Disponibilita':3,'group':2}),
+#     ('A3',{'Prezzo_Unita': 4,'Disponibilita':3,'group':3}),
+#     ('A4',{'Prezzo_Unita': 3,'Disponibilita':2,'group':4}),
+# ])
+
+# G.add_edges_from([
+#     ('A0','A3',{'capacity':2,'price':1.5}),
+#     ('A0','A4',{'capacity':1,'price':0.5}),
+#     ('A1','A3',{'capacity':3,'price':1}),
+#     ('A2','A4',{'capacity':2,'price':0.5}),
+# ])
+
+# # Problema 3 Simpler (P3S) 4 Seller e 3 Buyer
+# sb = [4,3]; # [Num_Seller,Num_Buyer]
+# seller_groups = 4; # Num_Seller_Group
+# G.add_nodes_from([
+#     ('A0',{'Prezzo_Unita': 1,'Disponibilita':1,'group':0}),
+#     ('A1',{'Prezzo_Unita': 2,'Disponibilita':1,'group':1}),
+#     ('A2',{'Prezzo_Unita': 3,'Disponibilita':1,'group':2}),
+#     ('A3',{'Prezzo_Unita': 1,'Disponibilita':1,'group':3}),
+#     ('A4',{'Prezzo_Unita': 3,'Disponibilita':1,'group':4}),
+#     ('A5',{'Prezzo_Unita': 4,'Disponibilita':1,'group':5}),
+#     ("A6",{'Prezzo_Unita': 3,'Disponibilita':1,'group':6})
+# ])
+
+# G.add_edges_from([
+#     ('A0','A4',{'capacity':1,'price':1}),
+#     ('A0','A6',{'capacity':1,'price':1.5}),
+#     ('A1','A5',{'capacity':1,'price':2}),
+#     ('A2','A5',{'capacity':1,'price':0.5}),
+#     ('A2','A6',{'capacity':1,'price':1}),
+#     ('A3',"A4",{'capacity':1,'price':2}),
+#     ('A3','A6',{'capacity':1,'price':1.5}),
+# ])
+
+# # Problema 3 (P3) 4 Seller e 3 Buyer
+# sb = [4,3]; # [Num_Seller,Num_Buyer]
+# seller_groups = 4; # Num_Seller_Group
+# G.add_nodes_from([
+#     ('A0',{'Prezzo_Unita': 1,'Disponibilita':2,'group':0}),
+#     ('A1',{'Prezzo_Unita': 2,'Disponibilita':3,'group':1}),
+#     ('A2',{'Prezzo_Unita': 3,'Disponibilita':3,'group':2}),
+#     ('A3',{'Prezzo_Unita': 1,'Disponibilita':2,'group':3}),
+#     ('A4',{'Prezzo_Unita': 3,'Disponibilita':1,'group':4}),
+#     ('A5',{'Prezzo_Unita': 4,'Disponibilita':2,'group':5}),
+#     ("A6",{'Prezzo_Unita': 3,'Disponibilita':3,'group':6})
+# ])
+
+# G.add_edges_from([
+#     ('A0','A4',{'capacity':2,'price':1}),
+#     ('A0','A6',{'capacity':2,'price':1.5}),
+#     ('A1','A5',{'capacity':3,'price':2}),
+#     ('A2','A5',{'capacity':1,'price':0.5}),
+#     ('A2','A6',{'capacity':2,'price':1}),
+#     ('A3',"A4",{'capacity':1,'price':2}),
+#     ('A3','A6',{'capacity':3,'price':1.5}),
+# ])
+
+# Problema con Archi Indiretti
+# G.add_nodes_from([
+#     ('A0',{'Prezzo_Unita': 1,'Disponibilita':100,'group':0}),
+#     ('A1',{'Prezzo_Unita': 2.5,'Disponibilita':90,'group':1}),
+#     ('A2',{'Prezzo_Unita': 2,'Disponibilita':80,'group':1}),
+#     ('A3',{'Prezzo_Unita': 0.5,'Disponibilita':150,'group':2}),
+#     ('A4',{'Prezzo_Unita': 4,'Disponibilita':120,'group':3}),
+#     ('A5',{'Prezzo_Unita': 3,'Disponibilita':70,'group':4}),
+#     ("A0'",{'Prezzo_Unita': 4,'Disponibilita':40,'group':0})
+# ])
+
+# G.add_edges_from([
+#     ('A0','A4',{'capacity':150,'price':0.5}),
+#     ('A1','A4',{'capacity':100,'price':100}),
+#     ('A1','A5',{'capacity':150,'price':100}),
+#     ('A1',"A0'",{'capacity':80,'price':100}),
+#     ('A2','A4',{'capacity':100,'price':100}),
+#     ('A2','A5',{'capacity':150,'price':100}),
+#     ('A2',"A0'",{'capacity':80,'price':100}),
+#     ('A3','A5',{'capacity':50,'price':3}),
+#     ('A3',"A0'",{'capacity':150,'price':0.5}),
+# ])
+
+# #Problema 10 (P10) 3 Seller e 2 Buyer
+# sb = [3,3]; # [Num_Seller,Num_Buyer]
+# seller_groups = 3; # Num_Seller_Group
+# G.add_nodes_from([
+#     ('A0',{'Prezzo_Unita': 1.5,'Disponibilita':3,'group':0}),
+#     ('A1',{'Prezzo_Unita': 0.25,'Disponibilita':5,'group':1}),
+#     ('A2',{'Prezzo_Unita': 2,'Disponibilita':3,'group':2}),
+#     ('A3',{'Prezzo_Unita': 4,'Disponibilita':3,'group':3}),
+#     ('A4',{'Prezzo_Unita': 3,'Disponibilita':4,'group':4}),
+#     ("A2'",{'Prezzo_Unita': 0,'Disponibilita':0,'group':2}),
+# ])
+
+# G.add_edges_from([
+#     ('A0','A3',{'capacity':3,'price':1.5}),
+#     ('A0','A4',{'capacity':1,'price':5}),
+#     ('A1',"A2'",{'capacity':5,'price':0.25}),
+#     ('A1','A4',{'capacity':2,'price':10}),
+#     ('A2','A4',{'capacity':4,'price':3}),
+# ])
